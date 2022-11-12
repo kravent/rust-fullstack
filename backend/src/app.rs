@@ -20,8 +20,8 @@ pub fn create_app() -> Router {
 
 pub fn user_routes() -> Router {
     Router::new()
-        .route("/user/list", get(list_users))
-        .route("/user", post(create_user))
+        .route("/api/users", get(list_users))
+        .route("/api/user", post(create_user))
 }
 
 #[debug_handler]
