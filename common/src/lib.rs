@@ -6,3 +6,9 @@ pub struct User {
     pub name: String,
     pub password: String,
 }
+
+#[derive(Serialize, Deserialize, Clone, PartialEq, Eq, Debug)]
+pub struct UserInput {
+    pub name: String,
+    pub password: String,
+}
